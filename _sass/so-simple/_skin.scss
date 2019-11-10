@@ -20,17 +20,17 @@ blockquote {
   background-color: mix($background-color, $accent-color, 90%);
   border-left-color: $accent-color;
 }
-  
+
 /* ==========================================================================
    Site-wide
    ========================================================================== */
 
 .site-title {
   a {
-    color: $text-color;
+    color: rgb(51, 152, 202);
   }
 }
-  
+
 .copyright {
   color: lighten($text-color, 35%);
   a {
@@ -68,16 +68,16 @@ blockquote {
 
 .site-nav {
   ul {
-    color: $nav-color;
-    background-color: $nav-background-color;
+    //color: $nav-color;
+    //background-color: $nav-background-color;
   }
 
   a {
-    color: $nav-color;
-    border-color: $nav-background-color;
+    color: black;
+    //border-color: $nav-background-color;
 
     &:hover {
-      border-color: $nav-color;
+      //border-color: $nav-color;
     }
   }
 }
@@ -180,11 +180,11 @@ td {
   border-bottom-color: $border-color;
 }
 
-  
+
 /* ==========================================================================
    NOTICE TEXT BLOCKS
    ========================================================================== */
-  
+
 /* Default notice */
 .notice {
   @include notice(lighten($base-color, 90%));
@@ -219,7 +219,7 @@ td {
 .notice--info {
   @include notice(mix(#fff, $info-color, 70%));
 }
-  
+
 /* ==========================================================================
    Accessibility Modules
    ========================================================================== */

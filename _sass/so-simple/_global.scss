@@ -33,7 +33,6 @@
     margin: 0;
     padding: 0.25em 0.75em;
     list-style: none;
-    border-radius: 0 0 (2 * $border-radius) (2 * $border-radius);
 
     @include breakpoint($medium) {
       display: inline-block;
@@ -42,16 +41,18 @@
 
   li {
     display: inline-block;
-    font-size: 0.75em;
+    font-size: 1.2em;
   }
 
   a {
     display: block;
-    padding: 0.5em 0.75em;
+    padding: 0.5em 1.2em;
     text-transform: uppercase;
     text-decoration: none;
-    border: 1px solid;
-    border-radius: $border-radius;
+  }
+
+  a:hover {
+    color: #3398ca;
   }
 
   @include breakpoint($medium) {
@@ -87,7 +88,6 @@
   font-family: $description-font-family;
   @include fluid-type($min-vw, $max-vw, $h5-min, $h5-max);
   font-weight: 400;
-  font-style: italic;
 }
 
 .site-logo {
